@@ -14,7 +14,7 @@ function logar(){
     
     //Verificar no servidor
      var verificacao = false;
-    if(login == "william" && senha == 123)
+    if(login.trim() == "william" && senha == 123)
         verificacao = true;
     
     if(verificacao){
