@@ -142,6 +142,7 @@ textarea.txt {
     min-height: 100%;
     max-height: 100%;
     max-width: 100%;
+    position: fixed;
 }
 
 .header-cont {
@@ -166,3 +167,25 @@ textarea.txt {
 .fullWidth{
     width: 100%;
 }
+
+.paginas { 
+    
+    height: 95%;
+    background-color: red;
+    position: fixed;
+    float: left;
+    
+}
+.paginas-t { 
+    
+    height: 95%;
+    background-color: black;
+    position: fixed;
+    
+}
+
+.left{
+    float: left;
+}
+
+
