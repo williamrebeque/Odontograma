@@ -151,7 +151,7 @@ textarea.txt {
     top:0px;
 }
 .header {
-    padding: 1% 1% 1% 1%;
+    padding: 0 1% 1% 1%;
     height: 50px;
     background:#ddd;
     width:100%;
@@ -202,3 +202,11 @@ textarea.txt {
     width: 100%; 
     height: 50px;
 }
+
+.searchText{
+    background-color: #ddd;
+}
+/*
+.searchText:active{
+    background-color: #fff;
+}*/

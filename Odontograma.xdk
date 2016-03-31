@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-project-lite/sample.zip",
       "projectGuid": "00000000-0000-0000-000000000000",
-      "lastModifiedDate": 1459251250007,
+      "lastModifiedDate": 1459445864326,
       "creationDate": 1458919592804
     },
     "XDK-app-designer": "false",
@@ -76,6 +76,78 @@
         "name": "Splashscreen",
         "description": "Cordova Splashscreen Plugin",
         "checksum": "452a4659"
+      },
+      {
+        "id": "cordova-plugin-camera",
+        "name": "Camera",
+        "version": "2.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-camera",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-camera",
+        "selectedState": "Included",
+        "checksum": "b5eb9803",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova Camera Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-file",
+        "name": "File",
+        "version": "4.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file",
+        "selectedState": "Included",
+        "checksum": "77b7c7b6",
+        "dependsOn": [],
+        "topLevel": false,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-media-capture"
+        ]
+      },
+      {
+        "id": "cordova-plugin-media-capture",
+        "name": "Capture",
+        "version": "1.2.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-media-capture",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-media-capture",
+        "selectedState": "Included",
+        "checksum": "fc48736e",
+        "dependsOn": [
+          "cordova-plugin-file"
+        ],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.RECORD_AUDIO",
+            "android.permission.RECORD_VIDEO",
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova Media Capture Plugin",
+        "data": {},
+        "dependedBy": []
       }
     ],
     "buildConfigurations": {
@@ -92,7 +164,7 @@
           "Orientation": "landscape"
         },
         "isActive_": true,
-        "appName_": "Odonto",
+        "appName_": "Odontograma",
         "appID_": "xdk.intel.cordova.template.lite",
         "appAccess_": {
           "mode": "whitelist",
@@ -114,7 +186,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "hMnNk7rzdUC1RNFkT5GsmA2",
+        "certificateId_": "X0LAUkEXBEmQWPyvCx-hKQ2",
         "cordovaCLIVersion_": "5.4.1",
         "crosswalkVersion_": "16",
         "appVersion_": "0.0.1",

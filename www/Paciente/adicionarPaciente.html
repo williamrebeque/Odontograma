@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="../js/jquery.mobile-1.4.5/jquery-1.12.2.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5/jquery.toaster.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="../css/updateJQuery.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    
+    
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+
+    <script src="cordova.js"></script>
+    
+    <script src="../js/adicionarPaciente.js"></script> 
+    
+    <script src="xdk/init-dev.js"></script>
+    
+</head>
+
+<body>
+    <div class="menu">
+        <div class = "header-cont">
+            <div class="header" style="padding-top: 5px">
+                
+                <table style="width: 100%; height: 100%; ">
+                    <tr>
+                        <td style="width: 95%; text-align: left;">
+                            <h4><a href="" id="voltarMenu">Menu</a> - Adicionar Paciente</h4>
+                        </td>
+                        <!--
+                        <td>
+                            <input type="text" name="txtPesquisar" id="txtPesquisar" placeholder="Pesquisar" class="txt">
+                        </td>
+                        <td>
+                            <img src="../js/jquery.mobile-1.4.5/images/icons-png/search-black.png" class="icones-m" id="btnPesquisar">
+                        </td>
+                        <td>
+                            <img src="../js/jquery.mobile-1.4.5/images/icons-png/plus-black.png" class="icones-m" id="adicionarPaciente">
+                        </td>-->
+                        <td>
+                            <img src="../js/jquery.mobile-1.4.5/images/icons-png/logout.png" class="icones-m" onclick="sair()">
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <div class="content">
+            
+            <center>
+            <table class="table">
+                <tr>
+                    <th rowspan="3">
+                        <img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%">
+                    </th>
+                    <td>
+                        CPF: <br>
+                        <input type="text" name="txtCpfPaciente" id="txtCpfPaciente">
+                    </td>
+                    <td>
+                        Nome: <br>
+                        <input type="text" name="txtNomePaciente" id="txtNomePaciente">
+                    </td>
+                    <td>
+                        Data de nascimento:<br>
+                        <input type="text" name="txtDataNascPaciente" id="txtDataNascPaciente">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CEP: <br>
+                        <input type="text" name="txtCepPaciente" id="txtCepPaciente">
+                    </td>
+                    <td>
+                        Rua: <br>
+                        <input type="text" name="txtRuaPaciente" id="txtRuaPaciente">
+                    </td>
+                    <td>
+                        Bairro:<br>
+                        <input type="text" name="txtBairroPaciente" id="txtBairroPaciente">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cidade: <br>
+                        <input type="text" name="txtCidadePaciente" id="txtCidadePaciente">
+                    </td>
+                    <td>
+                        UF: <br>
+                        <input type="text" name="txtUfPaciente" id="txtUfPaciente">
+                    </td>
+                    <td>
+                        Número:<br>
+                        <input type="text" name="txtNumeroPaciente" id="txtNumeroPaciente">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="border-top: 0">
+                        <input type="image" src="../js/jquery.mobile-1.4.5/images/icons-png/camera-black2.png" style="width: 50px; height: 40px; margin-right: 1%">
+                        <input type="image" src="../img/iconGallery.png" style="width: 50px; height: 40px; margin-left: 1%">
+                    </th>
+                    <td>
+                        Email: <br>
+                        <input type="text" name="txtEmailPaciente" id="txtEmailPaciente">
+                    </td>
+                    <td>
+                        1º Telefone para contato: <br>
+                        <input type="text" name="txtTel1Paciente" id="txtTel1Paciente">
+                    </td>
+                    <td>
+                        2º Telefone para contato: <br>
+                        <input type="text" name="txtTel2Paciente" id="txtTel2Paciente">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <br>
+                        <input type="submit" name="btnCadastrar" id="btnCadastrar" value="Cadastrar Paciente">
+                    </td>
+                </tr>
+            </table>
+            </center>
+            
+        </div>
+    </div>
+</body>
+</html>
