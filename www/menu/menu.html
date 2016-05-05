@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="../js/jquery.mobile-1.4.5/jquery-1.12.2.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5/jquery.toaster.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="../css/updateJQuery.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    
+    
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+
+    <script src="cordova.js"></script>
+    
+    <script src="../js/menu.js"></script> 
+    
+    <script src="xdk/init-dev.js"></script>
+    
+</head>
+
+<body>
+    
+    
+    <div class="menu">
+        <div class = "header-cont">
+            <div class="header">
+                
+                <table style="width: 100%; height: 100%">
+                    <tr>
+                        <td style="width: 65%; text-align: left;">
+                            <h4>Menu</h4>
+                        </td>
+                        <td>
+                            <input type="text" name="txtPesquisar" id="txtPesquisar" placeholder="Pesquisar" class="txt">
+                        </td>
+                        <td>
+                            <img src="../js/jquery.mobile-1.4.5/images/icons-png/search-black.png" class="icones-m" id="btnPesquisar">
+                        </td>
+                        <td>
+                            <img src="../js/jquery.mobile-1.4.5/images/icons-png/plus-black.png" class="icones-m" id="adicionarPaciente">
+                        </td>
+                        <td>
+                            <img src="../js/jquery.mobile-1.4.5/images/icons-png/logout.png" class="icones-m" onclick="sair()">
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <div class="content">
+            
+            
+            <div id="pag_voltar" class="paginas" style="width: 10%; margin: 20% auto">
+                <img src="../img/atras.png" class="arrows" style="margin-left: 30px"> 
+            </div>
+            
+            
+            <!-- gerar com o jquery pelo banco de dados -->
+            <div id="pacientes_1" class="paginas" style="margin-left: 10%; width: 80%"> 
+                <center>
+                    <table style="width: 95%; height: 95%;">
+                        <tr>
+                            <td style="  width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>William Fernandes Rebeque</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Amanda Michelle da Silva</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </center> 
+            </div>
+            
+            <div id="pacientes_2" class="paginas" style="margin-left: 10%; width: 80%; display: none"> 
+                <center>
+                    <table style="width: 95%; height: 95%;">
+                        <tr>
+                            <td style="  width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Amanda Michelle da Silva</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>William Fernandes Rebeque</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;">
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                            <td style=" width: 25%;" >
+                                <center>
+                                    <table style="width: 80%; margin-top: 10%; margin-bottom: 10%" class="selecionarCliente">
+                                        <tr>
+                                            <td style=" width: 100%;">
+                                                <center><img src="../img/fotoNaoIdentificado.png" style="width: 99%; height: 99%"></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nomePacientes">
+                                                <center><h5>Nome completo</h5></center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </center> 
+            </div>
+            
+            <div  class="paginas-t" style="width: 10%; margin: 20% auto auto 90%;"> 
+                <img id="pag_avancar" src="../img/frente.png" class="arrows" style="margin-left: 30px"> 
+            </div>
+            
+            <!--  
+            <table style="width: 100%; height: 95%; position: fixed;">
+            
+                <tr>
+                    
+                    <td style="height: 100%; width: 10%; padding-left: 15px">
+                        <img src="../img/atras.png" class="arrows" style="margin-left: 30px">
+                    </td>
+                    
+                    <td style="height: 100%; width: 80%" id="pacientes">
+                        <center> Content </center>
+                    </td>
+                    
+                    <td style="height: 100%; width: 10%; padding-left: 15px">
+                        <img src="../img/frente.png" class="arrows" style="margin-left: 30px">
+                    </td>
+                    
+                </tr>
+                
+            </table>-->
+            
+        </div>
+    </div>
+</body>
+</html>

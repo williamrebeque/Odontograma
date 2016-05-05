@@ -14,7 +14,7 @@ function logar(){
     
     //Verificar no servidor
      var verificacao = false;
-    if(login == "william" && senha == 123)
+    if(login.trim() == "william" && senha == 123)
         verificacao = true;
     
     if(verificacao){
@@ -44,10 +44,18 @@ function logar(){
     }
     
 }
-
+/*
 function onAppReady() {
     if( navigator.splashscreen && navigator.splashscreen.hide ) {   // Cordova API detected
         navigator.splashscreen.hide() ;
     }
 }
-document.addEventListener("app.Ready", onAppReady, false) ;
+document.addEventListener("app.Ready", onAppReady, false) ;*/
+
+var onDeviceReady=function(){                             // called when Cordova is ready
+   if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+        navigator.splashscreen.hide() ;                 // hide splash screen
+    }
+} ;
+document.addEventListener("deviceready", onDeviceReady, false);
+
