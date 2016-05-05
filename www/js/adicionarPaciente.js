@@ -4,6 +4,12 @@ $(document).ready(function(){
         $(location).attr('href', '../menu/menu.html');
     });
     
+    $("#txtCidadePaciente").on("focus", function(){
+        
+        //$("#menu").css("margim-bottom", "5%");
+        
+    });
+    
 });
 
 function sair(){
